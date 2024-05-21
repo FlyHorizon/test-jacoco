@@ -1,0 +1,17 @@
+org/study/springbootmybatis/model/pojo/UserExample$Criteria.class
+org/study/springbootmybatis/model/dao/UserInfoMapper.class
+org/study/springbootmybatis/model/pojo/UserInfo.class
+org/study/springbootmybatis/model/pojo/UserInfoExample$Criteria.class
+org/study/springbootmybatis/model/pojo/User.class
+org/study/springbootmybatis/model/pojo/UserInfoExample$Criterion.class
+org/study/springbootmybatis/model/pojo/UserExample$GeneratedCriteria.class
+org/study/springbootmybatis/model/pojo/UserExample.class
+org/study/springbootmybatis/model/po/UserInfoCom.class
+org/study/springbootmybatis/model/pojo/UserInfoExample$GeneratedCriteria.class
+org/study/springbootmybatis/client/UserClient.class
+org/study/springbootmybatis/service/UserService.class
+org/study/springbootmybatis/model/pojo/UserExample$Criterion.class
+org/study/springbootmybatis/controller/UserController.class
+org/study/springbootmybatis/model/pojo/UserInfoExample.class
+org/study/springbootmybatis/SpringbootMybatisApplication.class
+org/study/springbootmybatis/model/dao/UserMapper.class

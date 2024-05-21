@@ -1,0 +1,11 @@
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/service/UserService.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/model/pojo/User.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/controller/UserController.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/model/pojo/UserInfo.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/model/pojo/UserExample.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/SpringbootMybatisApplication.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/model/dao/UserMapper.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/model/pojo/UserInfoExample.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/model/po/UserInfoCom.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/model/dao/UserInfoMapper.java
+/Users/taoqin/Desktop/javaPro/springboot-demo/test-jacoco/springboot-mybatis/src/main/java/org/study/springbootmybatis/client/UserClient.java
