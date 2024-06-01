@@ -1,16 +1,11 @@
-package org.study.springbootmybatis.service;
+package com.study.springbootmybatis.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
-import org.study.springbootmybatis.model.dao.UserInfoMapper;
-import org.study.springbootmybatis.model.dao.UserMapper;
-import org.study.springbootmybatis.model.po.UserInfoCom;
-import org.study.springbootmybatis.model.pojo.User;
-import org.study.springbootmybatis.model.pojo.UserInfo;
+import com.study.springbootmybatis.model.dao.UserInfoMapper;
+import com.study.springbootmybatis.model.dao.UserMapper;
+import com.study.springbootmybatis.model.po.UserInfoCom;
 
 import javax.annotation.Resource;
-import java.sql.SQLException;
-import java.sql.Wrapper;
 
 @Service
 public class UserService {

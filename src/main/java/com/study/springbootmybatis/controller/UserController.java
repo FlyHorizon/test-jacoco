@@ -1,12 +1,12 @@
-package org.study.springbootmybatis.controller;
+package com.study.springbootmybatis.controller;
 
+import com.study.springbootmybatis.client.UserClient;
+import com.study.springbootmybatis.model.po.UserInfoCom;
+import com.study.springbootmybatis.service.UserService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.study.springbootmybatis.client.UserClient;
-import org.study.springbootmybatis.model.po.UserInfoCom;
-import org.study.springbootmybatis.service.UserService;
 
 import javax.annotation.Resource;
 

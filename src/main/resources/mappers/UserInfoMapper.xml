@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.study.springbootmybatis.model.dao.UserInfoMapper">
-  <resultMap id="BaseResultMap" type="org.study.springbootmybatis.model.pojo.UserInfo">
+<mapper namespace="com.study.springbootmybatis.model.dao.UserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.study.springbootmybatis.model.pojo.UserInfo">
     <id column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="adress" jdbcType="CHAR" property="adress" />
     <result column="nation" jdbcType="CHAR" property="nation" />
@@ -67,7 +67,7 @@
   <sql id="Base_Column_List">
     user_id, adress, nation
   </sql>
-  <select id="selectByExample" parameterType="org.study.springbootmybatis.model.pojo.UserInfoExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.study.springbootmybatis.model.pojo.UserInfoExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -91,10 +91,10 @@
     select u.user_id,u.usr_name, ui.user_id, ui.adress, ui.nation from user u, user_info ui where u.user_id=ui.user_id and u.user_id=#{userId,jdbcType=INTEGER}
   </select>
 
-  <resultMap id="userInfoCom" type="org.study.springbootmybatis.model.po.UserInfoCom">
+  <resultMap id="userInfoCom" type="com.study.springbootmybatis.model.po.UserInfoCom">
     <result property="userId" column="user_id"/>
     <result property="usrName" column="usr_name"/>
-    <collection property="userInfo" ofType="org.study.springbootmybatis.model.pojo.UserInfo">
+    <collection property="userInfo" ofType="com.study.springbootmybatis.model.pojo.UserInfo">
       <result property="userId" column="user_id"/>
       <result property="adress" column="adress"/>
       <result property="nation" column="nation"/>
@@ -104,19 +104,19 @@
     delete from user_info
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="org.study.springbootmybatis.model.pojo.UserInfoExample">
+  <delete id="deleteByExample" parameterType="com.study.springbootmybatis.model.pojo.UserInfoExample">
     delete from user_info
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="org.study.springbootmybatis.model.pojo.UserInfo">
+  <insert id="insert" parameterType="com.study.springbootmybatis.model.pojo.UserInfo">
     insert into user_info (user_id, adress, nation
       )
     values (#{userId,jdbcType=INTEGER}, #{adress,jdbcType=CHAR}, #{nation,jdbcType=CHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="org.study.springbootmybatis.model.pojo.UserInfo">
+  <insert id="insertSelective" parameterType="com.study.springbootmybatis.model.pojo.UserInfo">
     insert into user_info
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userId != null">
@@ -141,7 +141,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="org.study.springbootmybatis.model.pojo.UserInfoExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.study.springbootmybatis.model.pojo.UserInfoExample" resultType="java.lang.Long">
     select count(*) from user_info
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -173,7 +173,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="org.study.springbootmybatis.model.pojo.UserInfo">
+  <update id="updateByPrimaryKeySelective" parameterType="com.study.springbootmybatis.model.pojo.UserInfo">
     update user_info
     <set>
       <if test="adress != null">
@@ -185,7 +185,7 @@
     </set>
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="org.study.springbootmybatis.model.pojo.UserInfo">
+  <update id="updateByPrimaryKey" parameterType="com.study.springbootmybatis.model.pojo.UserInfo">
     update user_info
     set adress = #{adress,jdbcType=CHAR},
       nation = #{nation,jdbcType=CHAR}

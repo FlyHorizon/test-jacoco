@@ -1,4 +1,4 @@
-package org.study.springbootmybatis.model.pojo;
+package com.study.springbootmybatis.model.pojo;
 
 public class UserInfo {
     private Integer userId;

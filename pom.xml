@@ -96,7 +96,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>org.study.springbootmybatis.SpringbootMybatisApplication</mainClass>
+                    <mainClass>com.study.springbootmybatis.SpringbootMybatisApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

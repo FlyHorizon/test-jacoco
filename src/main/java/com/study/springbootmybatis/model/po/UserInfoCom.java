@@ -1,7 +1,7 @@
-package org.study.springbootmybatis.model.po;
+package com.study.springbootmybatis.model.po;
 
 import lombok.Data;
-import org.study.springbootmybatis.model.pojo.UserInfo;
+import com.study.springbootmybatis.model.pojo.UserInfo;
 
 @Data
 public class UserInfoCom {

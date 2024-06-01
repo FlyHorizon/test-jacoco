@@ -1,11 +1,12 @@
-package org.study.springbootmybatis.model.dao;
+package com.study.springbootmybatis.model.dao;
 
 import java.util.List;
 
+import com.study.springbootmybatis.model.pojo.UserExample;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.study.springbootmybatis.model.pojo.User;
-import org.study.springbootmybatis.model.pojo.UserExample;
+import com.study.springbootmybatis.model.pojo.User;
+
 @Mapper
 public interface UserMapper {
     long countByExample(UserExample example);

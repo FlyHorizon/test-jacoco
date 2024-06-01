@@ -1,4 +1,4 @@
-package org.study.springbootmybatis.model.pojo;
+package com.study.springbootmybatis.model.pojo;
 
 import java.util.ArrayList;
 import java.util.List;
