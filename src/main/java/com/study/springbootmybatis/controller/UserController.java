@@ -31,6 +31,4 @@ public class UserController {
         System.out.println(userClient.getClass().getName());
         return userClient.getUser(id);
     }
-
-
 }
