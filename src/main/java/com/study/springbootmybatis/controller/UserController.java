@@ -27,8 +27,8 @@ public class UserController {
 
     @RequestMapping(path = "/turn/{id}", method = RequestMethod.GET)
     public UserInfoCom getUserInfoByFeign(@PathVariable("id") Integer id) {
-        System.out.println("hello");
         System.out.println("turn/id");
+        System.out.println("add two part");
         System.out.println(userClient.getClass().getName());
         return userClient.getUser(id);
     }
