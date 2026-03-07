@@ -32,4 +32,11 @@ public class UserController {
         System.out.println(userClient.getClass().getName());
         return userClient.getUser(id);
     }
+
+    @RequestMapping(path = "/more/{id}", method = RequestMethod.GET)
+    public UserInfoCom getUserInfoMore(@PathVariable("id") Integer id) {
+        System.out.println("more");
+        System.out.println(userClient.getClass().getName());
+        return userClient.getUser(id);
+    }
 }
