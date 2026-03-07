@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+jacoco.exec
+jacoco.xml
+metadata.json
+target
