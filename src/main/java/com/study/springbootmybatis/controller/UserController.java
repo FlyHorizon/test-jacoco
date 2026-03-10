@@ -35,7 +35,11 @@ public class UserController {
 
     @RequestMapping(path = "commit/one/{id}", method = RequestMethod.GET)
     public UserInfoCom getUserInfoCommitOne(@PathVariable("id") Integer id){
+        if (id==1){
+            System.out.println("commit");
+        }
         System.out.println("commit one");
+
         return userService.getUserInfo(id);
     }
 
