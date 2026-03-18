@@ -32,4 +32,12 @@ public class UserController {
         System.out.println(userClient.getClass().getName());
         return userClient.getUser(id);
     }
+
+
+    @RequestMapping(path = "/commit/one/{id}", method = RequestMethod.GET)
+    public UserInfoCom getUserInfoByFeignCommitOne(@PathVariable("id") Integer id) {
+        System.out.println("commitOne");
+        System.out.println(userClient.getClass().getName());
+        return userClient.getUser(id);
+    }
 }
