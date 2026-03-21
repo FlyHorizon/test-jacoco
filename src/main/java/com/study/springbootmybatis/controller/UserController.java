@@ -38,6 +38,11 @@ public class UserController {
     public UserInfoCom getUserInfoByFeignCommitOne(@PathVariable("id") Integer id) {
         System.out.println("commitOne");
         System.out.println(userClient.getClass().getName());
+        if (id==1){
+            System.out.println("1");
+        }else{
+            System.out.println("2");
+        }
         return userClient.getUser(id);
     }
 
