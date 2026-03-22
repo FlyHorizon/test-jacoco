@@ -17,6 +17,7 @@ public class UserService {
 
 
     public UserInfoCom getUserInfo(Integer id){
+        System.out.println(id);
         System.out.println(userInfoMapper.getClass().getName());
         UserInfoCom userInfoCom = userInfoMapper.selectByUserid(id);
         

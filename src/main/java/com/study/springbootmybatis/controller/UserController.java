@@ -49,7 +49,12 @@ public class UserController {
     @RequestMapping(path = "/commit/two/{id}", method = RequestMethod.GET)
     public UserInfoCom getUserInfoByFeignCommitTwo(@PathVariable("id") Integer id) {
         System.out.println("commitTwo");
-        System.out.println(userClient.getClass().getName());
+        if (id==1 || id==2){
+            System.out.println("12");
+        }else{
+            System.out.println(userClient.getClass().getName());
+            System.out.println("1");
+        }
         return userClient.getUser(id);
     }
 }
