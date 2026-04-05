@@ -5,6 +5,7 @@
     <groupId>org.study</groupId>
     <artifactId>springboot-mybatis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>springboot-mybatis</name>
     <description>springboot-mybatis</description>
     <properties>
@@ -91,24 +92,27 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
-                <configuration>
-                    <mainClass>com.study.Application</mainClass>
-                    <skip>false</skip>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>repackage</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
+
+    <modules>
+        <module>test-common</module>
+        <module>test-service</module>
+        <module>test-web</module>
+    </modules>
+
+    <profiles>
+        <profile>
+            <id>only-reactor</id>
+            <modules>
+                <module>test-common</module>
+                <module>test-service</module>
+                <module>test-web</module>
+            </modules>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
 </project>

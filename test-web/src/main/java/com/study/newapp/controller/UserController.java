@@ -29,8 +29,8 @@ public class UserController {
     public UserInfoCom getUserInfoByFeign(@PathVariable("id") Integer id) {
         System.out.println("hello");
         System.out.println("turn/id");
-        System.out.println(userClient.getClass().getName());
-        return userClient.getUser(id);
+
+        return userService.getUserInfo(id);
     }
 
     @RequestMapping(path = "/commit/one/{id}", method = RequestMethod.GET)

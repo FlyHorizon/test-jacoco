@@ -10,11 +10,8 @@
     <name>test-jacoco-parent</name>
     <description>JaCoCo Multi-Module Test Project Parent</description>
 
-    <modules>
-        <module>../test-common</module>
-        <module>../test-service</module>
-        <module>../test-web</module>
-    </modules>
+    <!-- Modules declared in root pom.xml via -Pbuild-reactor profile -->
+
 
     <properties>
         <java.version>11</java.version>
