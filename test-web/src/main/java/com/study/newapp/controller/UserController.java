@@ -62,16 +62,4 @@ public class UserController {
         System.out.println("getUserName");
         return userService.getUserName(id);
     }
-
-    @RequestMapping(path = "/validate", method = RequestMethod.POST)
-    public boolean validateUser(Integer id, String name) {
-        System.out.println("validateUser");
-        return userService.validateUser(id, name);
-    }
-
-    @RequestMapping(path = "/score", method = RequestMethod.GET)
-    public int calculateScore(Integer s1, Integer s2, Integer s3) {
-        System.out.println("calculateScore");
-        return userService.calculateScore(s1, s2, s3);
-    }
 }
