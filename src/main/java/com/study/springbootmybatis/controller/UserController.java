@@ -32,4 +32,11 @@ public class UserController {
         System.out.println(userClient.getClass().getName());
         return userClient.getUser(id);
     }
+
+    @RequestMapping(path = "/turn/two/{id}", method = RequestMethod.GET)
+    public UserInfoCom getUserInfoByFeignTwo(@PathVariable("id") Integer id) {
+        System.out.println("two");
+        System.out.println(userClient.getClass().getName());
+        return userClient.getUser(id);
+    }
 }
