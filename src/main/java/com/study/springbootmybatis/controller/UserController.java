@@ -33,9 +33,19 @@ public class UserController {
         return userClient.getUser(id);
     }
 
+
+    @RequestMapping(path = "/turn/three/{id}", method = RequestMethod.GET)
+    public UserInfoCom getUserInfoByFeignThree(@PathVariable("id") Integer id) {
+        System.out.println("three");
+        System.out.println(userClient.getClass().getName());
+        return userClient.getUser(id);
+    }
     @RequestMapping(path = "/turn/two/{id}", method = RequestMethod.GET)
     public UserInfoCom getUserInfoByFeignTwo(@PathVariable("id") Integer id) {
         System.out.println("two");
+        if(id==1){
+            System.out.println("new by three commit");
+        }
         System.out.println(userClient.getClass().getName());
         return userClient.getUser(id);
     }
