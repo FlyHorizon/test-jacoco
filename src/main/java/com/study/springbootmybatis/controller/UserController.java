@@ -49,4 +49,9 @@ public class UserController {
         System.out.println(userClient.getClass().getName());
         return userClient.getUser(id);
     }
+    @RequestMapping(path = "/hello", method = RequestMethod.GET)
+    public String getHello() {
+        System.out.println("two");
+        return "v1 hello";
+    }
 }
