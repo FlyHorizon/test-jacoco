@@ -31,4 +31,10 @@ public class UserV1Controller {
         System.out.println("three");
         return "v2 hello three";
     }
+
+    @RequestMapping(path = "/helloFour", method = RequestMethod.GET)
+    public String getFour() {
+        System.out.println("four");
+        return "v4 hello three";
+    }
 }
