@@ -37,4 +37,16 @@ public class UserV1Controller {
         System.out.println("four");
         return "v4 hello three";
     }
+
+    @RequestMapping(path = "/helloFive", method = RequestMethod.GET)
+    public String getFive() {
+        System.out.println("three");
+        return "v2 hello Five";
+    }
+
+    @RequestMapping(path = "/helloSex", method = RequestMethod.GET)
+    public String getSex() {
+        System.out.println("four");
+        return "v4 hello Sex";
+    }
 }
