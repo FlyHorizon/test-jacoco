@@ -24,5 +24,23 @@ public class CommonV1Controller {
         return "v2 hello two";
     }
 
+    @RequestMapping(path = "/helloFour", method = RequestMethod.GET)
+    public String getFour() {
+        System.out.println("four");
+        return "v4 hello four";
+    }
+
+    @RequestMapping(path = "/helloFive", method = RequestMethod.GET)
+    public String getFive() {
+        System.out.println("FIve");
+        return "v2 hello Five";
+    }
+
+    @RequestMapping(path = "/helloSex", method = RequestMethod.GET)
+    public String getSex() {
+        System.out.println("Sex");
+        return "v4 hello Sex";
+    }
+
 
 }

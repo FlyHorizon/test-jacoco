@@ -35,18 +35,24 @@ public class UserV1Controller {
     @RequestMapping(path = "/helloFour", method = RequestMethod.GET)
     public String getFour() {
         System.out.println("four");
-        return "v4 hello three";
+        return "v4 hello four";
     }
 
     @RequestMapping(path = "/helloFive", method = RequestMethod.GET)
     public String getFive() {
-        System.out.println("three");
+        System.out.println("FIve");
         return "v2 hello Five";
     }
 
     @RequestMapping(path = "/helloSex", method = RequestMethod.GET)
     public String getSex() {
-        System.out.println("four");
+        System.out.println("Sex");
         return "v4 hello Sex";
+    }
+
+    @RequestMapping(path = "/helloSeven", method = RequestMethod.GET)
+    public String getSeven() {
+        System.out.println("Seven");
+        return "v4 hello Seven";
     }
 }
